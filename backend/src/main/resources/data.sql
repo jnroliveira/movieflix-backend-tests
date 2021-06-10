@@ -1,11 +1,13 @@
 INSERT INTO tb_user (name, email, password) VALUES ('Bob Brown', 'bob@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 INSERT INTO tb_user (name, email, password) VALUES ('Ana Green', 'ana@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO tb_user (name, email, password) VALUES ('Alex Silva', 'alex@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 
 INSERT INTO tb_role (authority) VALUES ('ROLE_VISITOR');
 INSERT INTO tb_role (authority) VALUES ('ROLE_MEMBER');
 
 INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
+INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 
 INSERT INTO tb_genre (name) VALUES('Ação');
 INSERT INTO tb_genre (name) VALUES('Aventura');
@@ -23,4 +25,5 @@ INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUE
 INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUES ('Minha Mãe É Uma Peça', '3', 2019, 'https://cdn.tlc-massive.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=85&ImageId=%27208048.jpg%27&ImageUrl=%27208048.jpg%27&EntityType=%27Item%27&EntityId=%2718028%27&device=web_browser&subscriptions=Anonymous&Width=360&Height=540', 'Após ter um piripaque, Dona Hermínia (Paulo Gustavo) recebe duas notícias: Marcelina (Mariana Xavier) está grávida de um cara que mal conhece e Juliano (Rodrigo Pandolfo) está noivo. Sofrendo ao ver que seus filhos já estão formando suas próprias famílias, ela decide focar nos preparativos para o casamento. Com o apoio de sua diarista Waldeia (Samantha Schmütz) e de suas irmãs Iesa (Alexandra Richter) e Lucia Helena (Patricya Travassos), a matriarca terá que driblar a sogra de seu filho, além de lidar com as novas investidas de Carlos Alberto (Herson Capri), seu ex-marido.', 3);
 
 INSERT INTO tb_review (user_id, movie_id, text) VALUES (1, 3, 'Velozes e furiosos é muito top!');
+INSERT INTO tb_review (user_id, movie_id, text) VALUES (3, 3, 'Velozes nunca decepciona.');
 INSERT INTO tb_review (user_id, movie_id, text) VALUES (1, 10, 'Sensacional, dei muita risada rsrs');
