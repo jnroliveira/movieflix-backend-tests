@@ -9,7 +9,7 @@ import com.devsuperior.movieflix.entities.Review;
 public class ReviewDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@NotBlank(message = "Campo requerido")
+	@NotBlank(message = "O texto não pode ser vazio")
 	private String text;
 	private Long movieId;
 	private UserDTO user;
